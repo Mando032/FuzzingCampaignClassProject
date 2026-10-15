@@ -1,0 +1,83 @@
+file,category,lines,lines_hit,line_pct,functions,functions_hit,branches,branches_hit,branch_pct
+ALAC/ALACBitUtilities.c,codec library,126,0,0,13,0,26,0,0
+ALAC/ag_dec.c,codec library,196,0,0,9,0,44,0,0
+ALAC/ag_enc.c,codec library,208,0,0,8,0,42,0,0
+ALAC/alac_decoder.c,codec library,406,0,0,5,0,170,0,0
+ALAC/alac_encoder.c,codec library,670,0,0,11,0,308,0,0
+ALAC/dp_dec.c,codec library,269,0,0,2,0,84,0,0
+ALAC/dp_enc.c,codec library,280,0,0,4,0,88,0,0
+ALAC/matrix_dec.c,codec library,187,0,0,9,0,46,0,0
+ALAC/matrix_enc.c,codec library,168,0,0,4,0,36,0,0
+G72x/g721.c,codec library,38,0,0,2,0,4,0,0
+G72x/g723_16.c,codec library,42,0,0,2,0,8,0,0
+G72x/g723_24.c,codec library,39,0,0,2,0,4,0,0
+G72x/g723_40.c,codec library,39,0,0,2,0,4,0,0
+G72x/g72x.c,codec library,373,0,0,16,0,148,0,0
+GSM610/add.c,codec library,119,0,0,14,0,100,0,0
+GSM610/code.c,codec library,30,0,0,1,0,4,0,0
+GSM610/decode.c,codec library,23,0,0,2,0,6,0,0
+GSM610/gsm_create.c,codec library,12,0,0,2,0,2,0,0
+GSM610/gsm_decode.c,codec library,337,0,0,1,0,6,0,0
+GSM610/gsm_destroy.c,codec library,4,0,0,1,0,2,0,0
+GSM610/gsm_encode.c,codec library,341,0,0,1,0,4,0,0
+GSM610/gsm_option.c,codec library,40,0,0,1,0,24,0,0
+GSM610/long_term.c,codec library,232,0,0,5,0,164,0,0
+GSM610/lpc.c,codec library,182,0,0,6,0,152,0,0
+GSM610/preprocess.c,codec library,35,0,0,1,0,14,0,0
+GSM610/rpe.c,codec library,179,0,0,8,0,138,0,0
+GSM610/short_term.c,codec library,197,0,0,12,0,78,0,0
+aiff.c,mainstream,1167,0,0,20,0,633,0,0
+alac.c,core/codec,598,0,0,26,0,286,0,0
+alaw.c,core/codec,202,0,0,17,0,98,0,0
+au.c,mainstream,252,0,0,5,0,153,0,0
+audio_detect.c,core/codec,41,0,0,2,0,39,0,0
+avr.c,target,101,0,0,4,0,56,0,0
+broadcast.c,core/codec,96,0,0,5,0,54,0,0
+caf.c,target,680,0,0,16,0,385,0,0
+cart.c,core/codec,42,0,0,4,0,22,0,0
+chanmap.c,core/codec,24,0,0,2,0,18,0,0
+chunk.c,core/codec,164,0,0,10,0,64,0,0
+command.c,core/codec,125,0,0,11,0,54,0,0
+dither.c,core/codec,234,0,0,11,0,174,0,0
+dwd.c,other container,4,0,0,1,0,2,0,0
+dwvw.c,core/codec,381,0,0,17,0,192,0,0
+flac.c,mainstream,4,0,0,1,0,0,0,0
+g72x.c,core/codec,319,0,0,15,0,146,0,0
+gsm610.c,core/codec,367,0,0,17,0,166,0,0
+id3.c,other container,42,0,0,3,0,30,0,0
+ima_adpcm.c,core/codec,635,0,0,22,0,302,0,0
+ima_oki_adpcm.c,core/codec,62,0,0,5,0,30,0,0
+ircam.c,other container,160,0,0,6,0,101,0,0
+mat5.c,target,299,0,0,4,0,149,0,0
+ms_adpcm.c,core/codec,504,0,0,18,0,228,0,0
+nist.c,other container,219,0,0,4,0,149,0,0
+nms_adpcm.c,core/codec,611,0,0,29,0,252,0,0
+ogg.c,target,4,0,0,1,0,0,0,0
+paf.c,other container,486,0,0,18,0,237,0,0
+pvf.c,target,87,0,0,4,0,48,0,0
+raw.c,other container,58,0,0,1,0,46,0,0
+rf64.c,mainstream,516,0,0,11,0,352,0,0
+rx2.c,other container,4,0,0,1,0,2,0,0
+sd2.c,target,348,0,0,10,0,158,0,0
+sds.c,other container,646,0,0,23,0,262,0,0
+strings.c,core/codec,106,0,0,4,0,89,0,0
+svx.c,other container,217,0,0,4,0,137,0,0
+txw.c,other container,4,0,0,1,0,2,0,0
+ulaw.c,core/codec,203,0,0,17,0,98,0,0
+voc.c,other container,304,0,0,5,0,141,0,0
+vox_adpcm.c,core/codec,240,0,0,12,0,118,0,0
+w64.c,target,343,0,0,4,0,208,0,0
+wav.c,mainstream,977,0,0,14,0,629,0,0
+wavlike.c,mainstream,856,0,0,18,0,442,0,0
+wve.c,other container,98,0,0,4,0,44,0,0
+xi.c,other container,746,0,0,38,0,312,0,0
+pcm.c,core/codec,1885,256,13.6,137,22,752,85,11.3
+sndfile.c,core/codec,2166,377,17.4,49,16,2139,244,11.4
+float32.c,core/codec,637,113,17.7,33,9,319,50,15.7
+double64.c,core/codec,648,136,21.0,33,10,321,68,21.2
+file_io.c,core/codec,334,74,22.2,23,11,192,22,11.5
+common.c,core/codec,1203,293,24.4,59,12,697,143,20.5
+mpeg.c,other container,8,4,50,2,1,0,0,0
+mpc2k.c,other container,78,41,52.6,4,3,40,15,37.5
+htk.c,target,81,47,58.0,4,3,44,15,34.1
+mat4.c,target,209,124,59.3,6,4,134,69,51.5

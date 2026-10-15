@@ -1,6 +1,8 @@
 # Prerequisites
 *.d
 
+libsndfile/
+
 # Compiled Object files
 *.slo
 *.lo

@@ -1,0 +1,4 @@
+libclang-rt-21-dev: arch-dependent-file-not-in-arch-specific-directory *usr/lib/llvm-21/lib/*
+libclang-rt-21-dev: no-code-sections *usr/lib/llvm-21/lib/clang/21*/lib/linux/libclang_rt.asan_static-i386.a*
+libclang-rt-21-dev: binary-from-other-architecture
+libclang-rt-21-dev: package-depends-on-multiple-libstdc-versions
