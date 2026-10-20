@@ -1,0 +1,5 @@
+      2 src/mat4.c:323:74 signed integer overflow
+      2 src/mat4.c:322:83 signed integer overflow
+      2 src/mat4.c:320:74 signed integer overflow
+      2 src/mat4.c:318:78 signed integer overflow
+      1 src/mat4.c:325:54 signed integer overflow

@@ -1,0 +1,12 @@
+# The image builds everything from scripts/ and the pinned upstream commit,
+# so nothing else from the host goes into the build context.
+.git
+.vscode
+libsndfile/
+build/
+toolchain/
+results/
+*.profraw
+*.log
+.DS_Store
+*.pdf

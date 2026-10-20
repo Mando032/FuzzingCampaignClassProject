@@ -19,6 +19,19 @@
 
 ## How to get the missing pieces back
 
+### Docker (recommended, works on any machine including Macs)
+
+```
+docker build -t sndfile-fuzz .     # downloads libsndfile at the pinned commit and builds the fuzzers
+docker run --rm --cap-add=SYS_PTRACE --security-opt seccomp=unconfined \
+  -v "$PWD/results:/work/results" -e DURATION=600 \
+  sndfile-fuzz scripts/baseline.sh my-run     # results land in results/my-run/
+```
+
+Pick a new run name each time; the default (`baseline`) overwrites the committed results. See `PROJECT_REVIEW_AND_PLAN.md` for more.
+
+### Without Docker (Ubuntu only)
+
 ```
 scripts/get-toolchain.sh   # re-downloads clang, including libFuzzer
 scripts/build.sh fuzz      # downloads libsndfile and builds the fuzzers

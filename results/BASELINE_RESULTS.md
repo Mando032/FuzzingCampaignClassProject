@@ -174,6 +174,19 @@ No ASan findings, OOMs or timeouts occurred in the 10-minute run.
 
 ## Reproducing
 
+With Docker (any host; the image builds both `fuzz` and `cov`):
+
+```
+docker build -t sndfile-fuzz .
+docker run --rm --cap-add=SYS_PTRACE --security-opt seccomp=unconfined \
+  -v "$PWD/results:/work/results" -e DURATION=600 \
+  sndfile-fuzz scripts/baseline.sh <new-run-name>
+```
+
+A 60 s Docker run on arm64 (`results/docker-smoke/`) gave the same 5.8% line coverage and the same UBSan sites, plus `mat4.c:325`. Exec/s is not comparable across hosts.
+
+Natively on Ubuntu:
+
 ```
 scripts/get-toolchain.sh        # only if clang is not installed system-wide
 scripts/build.sh fuzz           # ASan + UBSan + libFuzzer  -> build/fuzz
