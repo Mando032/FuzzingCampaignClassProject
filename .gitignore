@@ -2,6 +2,7 @@
 *.d
 
 libsndfile/
+toolchain/
 
 # Compiled Object files
 *.slo
