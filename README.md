@@ -4,9 +4,7 @@ Software Security, Track B. Francis Njoku and Armando Mendoza Sanchez.
 
 We fuzz [libsndfile](https://github.com/libsndfile/libsndfile) with libFuzzer under AddressSanitizer and UndefinedBehaviorSanitizer, and measure coverage with llvm-cov. This README explains how to reproduce our results in Docker. For the results themselves, see:
 
-- [MILESTONE_SUMMARY.md](MILESTONE_SUMMARY.md): project status, results and plan
 - [results/BASELINE_RESULTS.md](results/BASELINE_RESULTS.md): full baseline write-up with per-file coverage
-- [PROJECT_REVIEW_AND_PLAN.md](PROJECT_REVIEW_AND_PLAN.md): detailed analysis and task list
 
 ## Requirements
 
