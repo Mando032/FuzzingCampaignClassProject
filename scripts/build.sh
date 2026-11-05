@@ -38,4 +38,14 @@ CFLAGS="$FLAGS" CXXFLAGS="$FLAGS" LIB_FUZZING_ENGINE=-fsanitize=fuzzer \
 	"$SRC/configure" --disable-shared --enable-ossfuzzers $LIBOPTS
 make -j"$(nproc)" src/libsndfile.la
 for f in $FUZZERS; do make -j"$(nproc)" "ossfuzz/$f"; done
-ls -la $(printf "$BUILD/ossfuzz/%s " $FUZZERS)
+
+# Our harnesses (*_harness.cc in the repo root) build into *_fuzzer programs
+# next to the upstream ones.
+# dependency_libs lists the FLAC/Ogg/... libraries when EXTERNAL_LIBS=1.
+DEPS="$(sed -n "s/^dependency_libs='\(.*\)'/\1/p" src/libsndfile.la)"
+for h in "$ROOT"/*_harness.cc; do
+	[ -e "$h" ] || continue
+	$CXX $FLAGS -fsanitize=fuzzer -I"$SRC/include" -I"$SRC/ossfuzz" "$h" \
+		src/.libs/libsndfile.a $DEPS -lm -o "ossfuzz/$(basename "$h" _harness.cc)_fuzzer"
+done
+ls -la "$BUILD"/ossfuzz/*_fuzzer
