@@ -31,6 +31,8 @@ ENV EXTERNAL_LIBS=$EXTERNAL_LIBS
 
 WORKDIR /work
 COPY scripts/ scripts/
+# Our own harnesses; build.sh compiles every *_harness.cc it finds here.
+COPY *_harness.cc ./
 RUN chmod +x scripts/*.sh scripts/*.py \
 	&& scripts/build.sh fuzz \
 	&& scripts/build.sh cov

@@ -1,0 +1,8 @@
+date: 2026-11-11T06:04:29Z
+host: Linux 7.2.12-orbstack-00394-gbecdd6130068 aarch64, 15 cores
+duration_s: 60
+harnesses: sndfile_fuzzer sndfile_alt_fuzzer (one core each, run in parallel)
+builds: build/fuzz build/cov
+libsndfile: b9103bd48b6c8fb517ae737fe3baee0c718b804c
+clang: Ubuntu clang version 21.1.8 (6ubuntu1)
+seeds: none (empty corpus)

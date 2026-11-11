@@ -1,0 +1,4 @@
+dwvw-byterate-div0 unguarded: exit 1 src/dwvw.c:178:49: runtime error: division by zero
+dwvw-byterate-div0 guarded: exit 0 
+gsm610-byterate-overflow unguarded: exit 1 src/sndfile.c:1665:50: runtime error: signed integer overflow
+gsm610-byterate-overflow guarded: exit 1 src/sndfile.c:1665:50: runtime error: signed integer overflow
